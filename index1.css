@@ -230,10 +230,19 @@ img.display {
 }
 .contact-form input[type="email"] {
   padding: 15px;
-  width: 300px;
+  width: 400px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+textarea {
+  padding: 15px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: vertical; 
+  margin-top: 10px;
 }
 .contact-form button {
   padding: 13px 30px;
@@ -243,6 +252,7 @@ img.display {
   border-color: #d4d4d4;
   cursor: pointer;
   margin-left: 15px;
+  margin-top: 50px;
 }
 .contact-form button:hover {
   background-color: #d4d4d4;
@@ -421,9 +431,250 @@ img.display {
 /* Optional: Responsive for small screens */
 @media (max-width: 982px) {
   .cards-row {
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 5px;
+    gap: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .cards-row {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .cards-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+}
+@media (max-width: 850px) {
+    /* Navigation adjustments */
+    .logo { margin-left: 20px; }
+    .nav-links { gap: 20px; margin-right: 20px; }
+    .nav-links a { font-size: 16px; }
+
+    /* Contact alignment change (stacking text/form) */
+    .community-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-form {
+        margin-top: 20px;
+        width: 100%;
+        gap: 0; /* Remove gap in the contact form */
+    }
+    .contact-form form {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .contact-form input[type="email"],
+    .contact-form button {
+        width: 100%;
+        margin-left: 0; /* Important reset */
+    }
+    .privacy-link {
+        margin: 20px 20px 40px 20px; /* Centered margin removal */
+        text-align: left;
+        padding-right: 0;
+    }
+    
+    /* Social Media/About section stacking */
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .naruto-about-section-image {
+        margin: 0 0 20px 0;
+        order: 1;
+    }
+    
+    .about-text-container {
+        order: 2;
+        max-width: 100%;
+    }
+    
+    .about, .about-description, .follow {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .follow-section {
+        order: 3;
+        margin-top: 40px;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+/* --- RESPONSIVE ADJUSTMENTS (Small Mobile: max-width: 576px) --- */
+@media (max-width: 576px) {
+    .contact {
+        padding: 30px 0;
+    }
+    
+    /* Navigation cleanup */
+    nav { padding: 0 10px; }
+    .logo { margin-left: 10px; }
+    .nav-links { gap: 10px; margin-right: 10px; }
+    .nav-links a { font-size: 14px; }
+
+    /* Text size reduction for small screens */
+    .first-head h1 {
+        font-size: 1.5rem;
+    }
+    .first-head-description {
+        font-size: 1rem;
+    }
+    
+    /* Padding reduction for community container */
+    .community-container {
+        padding: 0 15px;
+    }
+    
+    /* Form input padding adjustment */
+    .contact-form input[type="email"],
+    .contact-form button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* About section text size */
+    .about, .follow {
+        font-size: 1.3rem;
+    }
+
+    /* Smaller social icons for better fit */
+    .instagram-bg, .facebook-bg, .twitter-bg, .whatsapp-bg {
+        width: 40px;
+        height: 40px;
+    }
+    .instagram, .facebook, .twitter, .whatsapp {
+        width: 20px;
+        height: 20px;
+    }
+    .social-icons {
+        gap: 10px; /* Slightly closer spacing */
+    }
+}
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .nav-links {
+    margin-top: 10px;
+    gap: 20px;
+  }
+  .contact-form {
+    margin-left: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .privacy-link {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .first-head,
+  .first-head-description,
+  .about,
+  .about-description,
+  .follow {
+    margin-left: 20px;
+    text-align: center;
+  }
+  .naruto-about-section-image {
+    margin: 20px auto;
+    display: block;
+  }
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .instagram-bg,
+  .facebook-bg,
+  .twitter-bg,
+  .whatsapp-bg {
+    margin: 10px;
+  }
+  .contact-form input[type="email"] {
+    width: 90%;
+  }
+  textarea {
+    width: 90%;
+  }
+  .contact-form button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 80%;
+  }
+  .instagram {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .facebook {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .twitter {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .whatsapp {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Small mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .logo {
+    margin-left: -270px;
+    font-size: 20px;
+  }
+  .nav-links {
+    flex-direction: row;
+    gap: 15px;
+    margin-top: -35px;
+    margin-right: -150px;
+  }
+  .first-head h1 {
+    font-size: 1.5rem;
+  }
+  .about-description {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cards-row {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
