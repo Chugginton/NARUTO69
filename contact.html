@@ -21,14 +21,18 @@
     <div class="first-head"><h1>Join our communities</h1></div>
     <div class="first-head-description">We’ll send you a nice letter once per week. No spam.</div>
     <div class="contact-form">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
+        
+    <form action="https://formspree.io/f/mvgqovpk" method="POST" id="contactForm">
+         <input type="email" name="email" placeholder="Your Email" required>
+         <textarea name="message" rows="5" placeholder="Enter Your Feedback" required></textarea>
+        <button class="send" type="submit">SEND!</button>
+    </form>        
     </div>
     <h1 class="privacy-link">We care about your data <a href="#">Privacy Policy</a></h1>
 
     <div class="social-media">
         <img class="naruto-about-section-image" src="narutopng.png" alt="">
-        <h1 class="about">About us</h1>t
+        <h1 class="about">About us</h1>
         <p class="about-description">We are a community of Naruto fans who love to share our for the series. Join us to discuss episodes, characters, and everything Naruto! Our mission is to connect every Naruto fan.</p>
         <h1 class="follow">Follow us</h1>
         
@@ -45,4 +49,20 @@
             <a href="https://web.whatsapp.com/" target="_blank"><img class="whatsapp" src="whatsapp.png" alt="whatsapp"></a>    
         </div>    
 </body>
+<script>
+      const form = document.getElementById("contactForm");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      document.getElementById("formResponse").style.display = "block";
+      form.reset();
+    }
+  });
+</script>
 </html>
