@@ -1048,135 +1048,137 @@ a:-webkit-any-link {
   html, body {
     overflow-x: hidden; 
   }
+
   .nav-links {
-    display: none; /* Hide navigation links on small screens */
+    display: none;
   }
+
   .logo {
-    width: 100px; /* Adjust logo size for small screens */
+    width: 100px;
     margin-top: 20px;
     margin-left: 10px;
   }
+
   .section2 {
-    width: 90%; /* Make section2 responsive */
+    width: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .card-section, .card-section3, .card-section4 {
-    flex-direction: column; /* Stack cards vertically on small screens */
+
+  .card-section,
+  .card-section3,
+  .card-section4 {
+    flex-direction: column;
     align-items: center;
   }
-  .card, .card3, .card4 {
-    width: 90%; /* Make cards responsive */
+
+  .card,
+  .card3,
+  .card4 {
+    width: 90%;
     max-width: 400px;
   }
+
   .section5 {
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: column;
     text-align: center;
   }
 }
-/* ======================================= */
-/* Tablet & Small Laptop Styles (max-width: 1024px) */
-/* ======================================= */
+
 @media (max-width: 576px) {
-    .section-2 {
-        /* Reduce min-height for less vertical space on tablets */
-        min-height: 1800px;
-    }
+  .section-2 {
+    min-height: 1800px;
+  }
 
-    .section2 {
-        top: 14.5%;
-        margin-left: 20px;
-        width: 200px; 
-        height: 250px;
-    }
-    
-    .neji {
-        /* Move closer to the center, or hide if it's purely decorative */
-        left: -200px; 
-        top: -1100px;
-        width: 150px;
-        display: none;
-    }
+  .section2 {
+    top: 14.5%;
+    margin-left: 20px;
+    width: 200px; 
+    height: 250px;
+  }
 
-    .newsstroke {
-        /* Adjust position, maybe center it or use a percentage left */
-        top: 120px;
-        left: 7%;
-        width: 120px;
-    }
+  .neji {
+    left: -200px; 
+    top: -1100px;
+    width: 150px;
+    display: none;
+  }
 
-    .css-v5m5mf {
-        /* Move SPECIAL button down and left to prevent overlap/collision */
-        top: 1420px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    /* Adjust position for the main news article containers */
-    .css-19b4s3l,
-    .css-19b4s3l-2 {
-        position: relative; /* Use relative or remove position to flow naturally */
-        top: 400px;
-        left: 25px;
-        width: 50%; /* Make them wider to fill the screen */
-        height: auto;
-        font-size: x-small;
-    }
-    .css-19b4s3l-2 {
-        left: 210px; /* Reset left for the second container */
-        margin-top: -209px; /* Add space between the two containers */
-    }
+  .newsstroke {
+    top: 120px;
+    left: 7%;
+    width: 120px;
+  }
 
-    /* Stack the content of the card section */
-    .card-section {
-        position: relative;
-        top: 650px;
-        left: auto;
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center stacked cards */
-        gap: 20px;
-        margin-top: 50px; 
-        font-size: x-small;
-        height: 200px;
-    }
-    
-    .card,
-    .card img,
-    .card-title,
-    .card-divider {
-        width: 80%; /* Adjust card width */
-        max-width: 450px; /* Cap card width for very wide tablets in landscape */
-        height: auto;
-        font-size: small; 
-        margin-left: 10px;
-    }
+  .css-v5m5mf {
+    top: 1420px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    .section2button {
-        top: 1100px;
-        position: relative;
-        margin: 50px auto; /* Push it to the bottom and center */
-        left: auto;
-        transform: none;
-        width: 80%;
-        max-width: 400px;
-    }
-    
-    .section2icon {
-        left: auto; /* Reset absolute positioning */
-        right: 10px; /* Position relative to button's right edge */
-    }
+  .css-19b4s3l,
+  .css-19b4s3l-2 {
+    position: relative;
+    top: 400px;
+    left: 05px;
+    width: 50%;
+    height: auto;
+    font-size: x-small;
+  }
 
-    .frog {
-        /* Move frog or hide it if it overlaps important content */
-        top: 1075px;
-        position: relative;
-        left: 80%;
-        transform: translateX(-50%);
-        margin-top: 20px;
-        width: 150px;
-    }
-    
-.css-72j8ho {
+  .css-19b4s3l-2 {
+    left: 250px;
+    margin-top: -222px;
+  }
+
+  .card-section {
+    position: relative;
+    top: 650px;
+    left: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px; 
+    font-size: x-small;
+    height: 200px;
+  }
+
+  .card,
+  .card img,
+  .card-title,
+  .card-divider {
+    width: 80%;
+    max-width: 450px;
+    height: auto;
+    font-size: small; 
+    margin-left: 10px;
+  }
+
+  .section2button {
+    top: 1100px;
+    position: relative;
+    margin: 50px auto;
+    left: auto;
+    transform: none;
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .section2icon {
+    left: auto;
+    right: 10px;
+  }
+
+  .frog {
+    top: 1075px;
+    position: relative;
+    left: 80%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    width: 150px;
+  }
+
+  .css-72j8ho {
     font-family: var(--comic-impact-font);
     font-size: 11.11px;
     line-height: 24px;
@@ -1184,292 +1186,380 @@ a:-webkit-any-link {
     text-align: center;
     background-color: black;
     border-radius: 20px;
-}
+  }
 
-.css-1r94il2 {
-    width: 80%;
-    max-width: 100%;
+  .css-1r94il2 {
+    width: 100%;
+    max-width: 80%;
     height: auto;
-    max-height: 100%;
+    max-height: 110%;
     object-fit: contain;
-}
-.css-72j8ho {
-  background-color: black;
-  color: snow;
-  border-radius: 50px;
- width: 70px;
- font-size: small;
-}
-.css-72j8ho:not(:lang(ja)) {
+    margin-left: 10px;
+  }
+
+  .css-72j8ho {
+    background-color: black;
+    color: snow;
+    border-radius: 50px;
+    width: 70px;
+    font-size: small;
+  }
+
+  .css-72j8ho:not(:lang(ja)) {
     font-size: 14px;
-}
+  }
 }
 
 @media (max-width: 576px) {
   .section-3 {
-      /* Reduce min-height for less vertical space on tablets */
-      min-height: 2500px;
+    min-height: 2500px;
   }
+
   .section-3 .ranking-border {
-      left: 7px;
-      top: 14%;
-      height: 90%;
-      width: 3px;
+    left: 7px;
+    top: 14%;
+    height: 90%;
+    width: 3px;
   }
+
   .section-3 .ranking-border2 {
     position: absolute;
     left: 0%;
-    top: 72.5%; /* The old value */
+    top: 72.5%;
     z-index: 1;
     width: 100%;
     height: 3px;
     background-color: white;
-}
-  .section-3 .head-3{
+  }
+
+  .section-3 .head-3 {
     left: 50px;
     margin-top: -30px;
   }
+
   .card-section3,
-    .cardsectiondown {
-        margin: 0 auto;
-        display: block; /* Stacks all elements */
-        padding: 0 10px;
-        width: 100%;
-        margin-left: -65px;
-        margin-top: -50px;
+  .cardsectiondown {
+    margin: 0 auto;
+    display: block;
+    padding: 0 10px;
+    width: 100%;
+    margin-left: -65px;
+    margin-top: -50px;
   }
-    /* --- RANK 1 CARD (.card3) Mobile Styles --- */
-    .section-3 .card3 {
-        width: 70%; /* Full width mobile */
-        height: 100px;
-        margin-bottom: 20px;
-        left: -55px;
-    }
-    .card3 img {
-        width: 100%; /* Full width image */
-        height: 100px; /* Fixed height for consistency */
-        object-fit: contain; /* Maintain aspect ratio, cover the area */
-    }
-    /* Hide the absolute positioned ranking badge (::after) */
-    .card3::after, .card3::before {
-        display: none;
-    }
-    .card-title3 {
-        font-size: 10px;
-        width: 100%; /* Override fixed width */
-    }
-    .card-divider3 {
-        width: 100%;
-        bottom: 30px;
-    }
-    .card-footer3 {
-        width: 100%;
 
-    }
-    .tag {
-        font-size: 5px;
-    }
-    .date {
-        font-size: 13px;
-        margin-left: 0;
-    }
-    .card-3la, .card-3lb {
-        margin-bottom: 20px;
-        border-top: 1px solid #333; /* Use a separator between stacked cards */
-    }
-    .section-3 .cardsectionb {
-        margin-top: 95px;
-    }
-    .section-3 .card-3la {
-      margin-left: -35px;
-    }
-    .section-3 .card-3lb {
-      margin-left: -100px;
-      margin-right: 5px;
-      left: 15px;
-    }
-    .section-3 .card3l {
-      width: 80%;
-    }
-    .card3l {
-        width: 100%; /* Full width mobile */
-        height: 100px;
-        margin-left: 0;
-    }
-    .card3l img {
-        width: 100%; /* Full width image */
-        height: 95px; /* Fixed height for consistency */
-        object-fit: contain; /* Maintain aspect ratio, cover the area */
-        aspect-ratio: 1/1;
-    }
-    .card-title3l {
-        font-size: 10px;
-        bottom: 20px;
-        width: 100%; /* Override fixed width */
-    }
-    .card-divider3l {
-        width: 90%;
-    }
-    .card-footer3l {
-        width: 100%;
-        padding: 0 10px 5px;
-    }
+  .section-3 .card3 {
+    width: 70%;
+    height: 100px;
+    margin-bottom: 20px;
+    left: -55px;
+  }
 
-    /* --- RANK 4+ LIST ITEMS (.card3d) Mobile Styles --- */
-    .cardsectiondown {
-      margin-left: -150px;
-        padding: 10px;
-        flex-direction: column;
-        gap: 15px;
-        display: block; /* Switch to block layout */
-    }
-    .card3d {
-        width: 80%;
-        height: auto;
-        margin-left: -10px;
-        background: none;
-        box-shadow: none;
-        border-bottom: 1px solid #333; /* Separator for list items */
-        padding-bottom: 15px;
-        padding-top: 10px;
-    }
-    .card3d img {
-        width: 35%;
-        height: 70px;
-        margin-left: 10px;
-        display: none;
-    }
-    .card-title3d {
-        width: 90%;
-        left: 0;
-        top: 15px;
-        font-size: 10px;
-        padding-left: 0;
-        margin-top: 0;
-    }
-    .card-divider3d {
-        width: 100%;
-        margin-top: 45px;
-    }
-    .card-footer3d {
-        width: 100%;
-    }
-    .tag {
-        font-size: 5px;
-        margin-top: 2px;
-    }
-    .date {
-        font-size: 13px;
-        margin-left: 0;
-    }
+  .card3 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .card3::after,
+  .card3::before {
+    display: none;
+  }
+
+  .card-title3 {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .card-divider3 {
+    width: 100%;
+    bottom: 30px;
+  }
+
+  .card-footer3 {
+    width: 100%;
+  }
+
+  .tag {
+    font-size: 5px;
+  }
+
+  .date {
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  .card-3la,
+  .card-3lb {
+    margin-bottom: 20px;
+    border-top: 1px solid #333;
+  }
+
+  .section-3 .cardsectionb {
+    margin-top: 95px;
+  }
+
+  .section-3 .card-3la {
+    margin-left: -35px;
+  }
+
+  .section-3 .card-3lb {
+    margin-left: -100px;
+    margin-right: 5px;
+    left: 15px;
+  }
+
+  .section-3 .card3l {
+    width: 80%;
+  }
+
+  .card3l {
+    width: 100%;
+    height: 100px;
+    margin-left: 0;
+  }
+
+  .card3l img {
+    width: 100%;
+    height: 95px;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+  }
+
+  .card-title3l {
+    font-size: 10px;
+    bottom: 20px;
+    width: 100%;
+  }
+
+  .card-divider3l {
+    width: 90%;
+  }
+
+  .card-footer3l {
+    width: 100%;
+    padding: 0 10px 5px;
+  }
+
+  .cardsectiondown {
+    margin-left: -150px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+    display: block;
+  }
+
+  .card3d {
+    width: 80%;
+    height: auto;
+    margin-left: -10px;
+    background: none;
+    box-shadow: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+
+  .card3d img {
+    width: 35%;
+    height: 70px;
+    margin-left: 10px;
+    display: none;
+  }
+
+  .card-title3d {
+    width: 90%;
+    left: 0;
+    top: 15px;
+    font-size: 10px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .card-divider3d {
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .card-footer3d {
+    width: 100%;
+  }
 }
+
 @media (max-width: 576px) {
-    .section-4 {
-        /* Adjust for smaller screens */
-        padding: 10px;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
+  .section-4 {
+    padding: 10px;
+    overflow-x: hidden;
+  }
 
-    .section4 {
-        /* Adjust ornamental image size and position */
-        width: 200px; 
-        height: auto;
-        margin-top: -30px;
-        margin-left: 100px; 
-        display: block; /* Ensure it takes up space */
-    }
-    
-    .newsstroke4 {
-        /* Adjust ornamental image position */
-        margin-left: 50px; 
-        width: 150px;
-        height: auto;
-    }
+  .section4 {
+    width: 200px; 
+    height: auto;
+    margin-top: -30px;
+    margin-left: 100px; 
+    display: block;
+  }
 
-    .sectiontop {
-        /* Change to a single-column layout */
-        flex-direction: column;
-        gap: 20px; 
-        margin-top: 20px;
-    }
+  .newsstroke4 {
+    margin-left: 50px; 
+    width: 150px;
+    height: auto;
+  }
 
-    .card4, .card4l {
-        /* Make cards full width and auto height, reducing overall size */
-        width: 100%; 
-        max-width: 350px; /* Constraint for very narrow screens */
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Smaller shadow */
-    }
+  .sectiontop {
+    flex-direction: column;
+    gap: 20px; 
+    margin-top: 20px;
+  }
 
-    .card4 img, .card4l img {
-        /* Image fluid within the card */
-        width: 100%;
-        height: auto;
-        max-height: 200px; /* Cap image height */
-    }
-    
-    .card-title4, .card-title4l {
-        /* Text size and alignment adjustments */
-        width: 100%; 
-        font-size: 16px; 
-        padding: 0 10px;
-    }
+  .card4,
+  .card4l {
+    width: 100%; 
+    max-width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .card-divider4, .card-divider4l {
-        /* Divider full width */
-        width: 100%;
-        margin: 5px 0;
-    }
+  .card4 img,
+  .card4l img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
 
-    .card-footer4, .card-footer4l {
-        /* Adjust padding */
-        padding: 5px 10px 5px;
-    }
+  .card-title4,
+  .card-title4l {
+    width: 100%; 
+    font-size: 16px; 
+    padding: 0 10px;
+  }
 
-    .card-section4 {
-        /* Adjust multi-card section to stack vertically */
-        flex-direction: column;
-        gap: 20px; 
-        position: static; /* Remove absolute positioning */
-        margin: 20px auto; /* Center the section with some vertical margin */
-        align-items: center;
-    }
-    
-    .section4button {
-        /* Adjust button to be centered and full width (or nearly so) */
-        width: 90%; 
-        max-width: 320px; 
-        margin: 30px auto 20px; /* Center with margin */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative; /* Maintain relative flow */
-        left: auto;
-        right: auto;
-        line-height: normal; /* Ensure text fits */
-    }
-    
-    .section4icon {
-        /* Re-position icon relative to the button */
-        position: static; 
-        margin-left: 10px; 
-    }
-    
-    .frog4 {
-        /* Adjust ornamental image size and position */
-        width: 100px; 
-        margin: 20px auto; 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .card-divider4,
+  .card-divider4l {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .card-footer4,
+  .card-footer4l {
+    padding: 5px 10px 5px;
+  }
+
+  .card-section4 {
+    flex-direction: column;
+    gap: 20px; 
+    position: static;
+    margin: 20px auto;
+    align-items: center;
+  }
+
+  .section4button {
+    width: 90%; 
+    max-width: 320px; 
+    margin: 30px auto 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: auto;
+    right: auto;
+    line-height: normal;
+  }
+
+  .section4icon {
+    position: static;
+    margin-left: 10px;
+  }
+
+  .frog4 {
+    width: 100px; 
+    margin: 20px auto; 
+    display: block;
+  }
 }
 
+nav {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 
+@media screen and (max-width: 480px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+    margin-right: -10px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .nav-links a {
+    font-size: 16px;
+  }
 
+  .logo {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cardfooter {
+    min-height: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .cardfooter img {
+    width: 80%;
+    max-width: 250px;
+    position: static;
+    margin: 15px 0;
+    display: block;
+  }
 
+  .cardfooter p {
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .downimg {
+    min-height: auto;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .downimg img {
+    position: static;
+    margin: 0 auto 20px auto;
+    width: 60%;
+    max-width: 200px;
+  }
+
+  .downimg p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.6;
+    width: 100%;
+  }
+
+  .follow-naruto {
+    margin: 20px auto;
+    position: static;
+    font-size: 14px;
+  }
+}
 
 
