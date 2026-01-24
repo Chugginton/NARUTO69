@@ -1127,8 +1127,8 @@ a:-webkit-any-link {
   }
 
   .css-19b4s3l-2 {
-    left: 250px;
-    margin-top: -222px;
+    left: 180px;
+    margin-top: -207px;
   }
 
   .card-section {
@@ -1493,8 +1493,9 @@ nav {
     flex-direction: row;
     gap: 15px;
     margin-top: 10px;
-    margin-right: -10px;
+    margin-right: 10px;
     justify-content: center;
+    margin-left: -60px;
     width: 100%;
   }
   
@@ -1503,9 +1504,9 @@ nav {
   }
 
   .logo {
-    margin-top: 10px;
+    margin-top: 2px;
     margin-left: 0;
-    width: 100px;
+    width: 50px;
   }
 }
 @media screen and (max-width: 480px) {
