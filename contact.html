@@ -22,12 +22,14 @@
     <div class="first-head-description">We’ll send you a nice letter once per week. No spam.</div>
     <div class="contact-form">
         
-    <form action="https://formspree.io/f/mvgqovpk" method="POST" id="contactForm">
+    <form action="/contact" method="POST" id="contactForm">
          <input type="email" name="email" placeholder="Your Email" required>
          <textarea name="message" rows="5" placeholder="Enter Your Feedback" required></textarea>
         <button class="send" type="submit">SEND!</button>
-    </form>        
+        <div id="formResponse" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
+        Scroll sent via Summoning Jutsu!
     </div>
+    </form>        
     <h1 class="privacy-link">We care about your data <a href="#">Privacy Policy</a></h1>
 
     <div class="social-media">
